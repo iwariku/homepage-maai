@@ -1,0 +1,319 @@
+:root {
+  --color-bg: #ffffff;
+  --color-bg-alt: #f7f8fa;
+  --color-text: #1a1a2e;
+  --color-text-sub: #555770;
+  --color-primary: #2d5be3;
+  --color-available-bg: #dcfce7;
+  --color-available-badge: #16a34a;
+  --color-break-bg: #fed7aa;
+  --color-break-badge: #f97316;
+  --color-holiday-bg: #bfdbfe;
+  --color-holiday-badge: #2563eb;
+  --color-border: #e2e5ee;
+  --max-width: 960px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  color: var(--color-text);
+  line-height: 1.8;
+  background: var(--color-bg);
+}
+
+.section {
+  padding: 80px 24px;
+}
+
+.section--alt {
+  background: var(--color-bg-alt);
+}
+
+.section--center {
+  text-align: center;
+}
+
+.section__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.section__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+}
+
+.section__subtitle {
+  font-size: 1rem;
+  color: var(--color-text-sub);
+  margin-bottom: 48px;
+}
+
+/* ===== Hero ===== */
+.hero {
+  text-align: center;
+  padding: 120px 24px 100px;
+  background: linear-gradient(160deg, #eef2ff 0%, #f7f8fa 100%);
+}
+
+.hero__logo {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+.hero__catch {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero__sub {
+  font-size: 1rem;
+  color: var(--color-text-sub);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ===== Story ===== */
+.story {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.story__text {
+  font-size: 1.05rem;
+  color: var(--color-text-sub);
+  margin-bottom: 16px;
+  line-height: 2;
+  text-align: left;
+}
+
+.story__text:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== Status List ===== */
+.status-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 12px;
+  padding: 20px 24px;
+}
+
+.status-item--available { background: var(--color-available-bg); }
+.status-item--break { background: var(--color-break-bg); }
+.status-item--holiday { background: var(--color-holiday-bg); }
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 20px;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.status-badge--available { background: var(--color-available-badge); }
+.status-badge--break { background: var(--color-break-badge); }
+.status-badge--holiday { background: var(--color-holiday-badge); }
+
+.status-desc {
+  font-size: 0.95rem;
+  color: var(--color-text-sub);
+}
+
+/* ===== Demo ===== */
+.demo-wrapper {
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 32px 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.demo-header {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 24px;
+}
+
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.demo-card {
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.demo-card--available { background: var(--color-available-bg); }
+.demo-card--break { background: var(--color-break-bg); }
+.demo-card--holiday { background: var(--color-holiday-bg); }
+
+.demo-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.demo-card__name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.demo-card__badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 9999px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.demo-card__badge--available { background: var(--color-available-badge); }
+.demo-card__badge--break { background: var(--color-break-badge); }
+.demo-card__badge--holiday { background: var(--color-holiday-badge); }
+
+.demo-card__time {
+  font-size: 0.78rem;
+  color: #374151;
+  text-align: right;
+}
+
+/* ===== Use Cases ===== */
+.usecase-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.usecase-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 28px 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.usecase-card__number {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.usecase-card__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.usecase-card__desc {
+  font-size: 0.95rem;
+  color: var(--color-text-sub);
+}
+
+/* ===== Features ===== */
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 28px 24px;
+}
+
+.feature-card__icon {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+}
+
+.feature-card__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.feature-card__desc {
+  font-size: 0.95rem;
+  color: var(--color-text-sub);
+}
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  padding: 40px 24px;
+  font-size: 0.85rem;
+  color: var(--color-text-sub);
+  border-top: 1px solid var(--color-border);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .hero {
+    padding: 80px 20px 64px;
+  }
+
+  .hero__logo {
+    font-size: 2.5rem;
+  }
+
+  .hero__catch {
+    font-size: 1.2rem;
+  }
+
+  .section {
+    padding: 56px 20px;
+  }
+
+  .section__title {
+    font-size: 1.4rem;
+  }
+
+  .demo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-card__name {
+    font-size: 1.1rem;
+  }
+
+  .demo-card__badge {
+    font-size: 0.95rem;
+    padding: 6px 16px;
+  }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>maai - チームの"いま"をひと目で把握</title>
+  <meta name="description" content="maaiは、チームメンバーのリアルタイムなステータスを可視化し、不要な作業中断を減らすアプリです。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="section__inner">
+      <p class="hero__logo">maai</p>
+      <h1 class="hero__catch">ひと目でわかる、チームの"いま"</h1>
+      <p class="hero__sub">休憩中の人への不要な連絡をなくし、チーム全員が本来の業務に集中できる環境をつくるステータス共有アプリ。</p>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section class="section section--center">
+    <div class="section__inner">
+      <h2 class="section__title">開発のきっかけ</h2>
+      <div class="story">
+        <p class="story__text">以前働いていた現場で、こんなことがよくありました。</p>
+        <p class="story__text">役職者が休憩に入っているのに、他の店舗からその人宛てに電話がかかってくる。休憩中だと知っていれば、わざわざかけないはずの電話です。</p>
+        <p class="story__text">結局「今、休憩中なので折り返します」というやり取りが発生し、電話を受けた側も、かけた側も、そして休憩中の本人も——全員の作業が止まってしまう。</p>
+        <p class="story__text">「誰が今どんな状態か」——たったそれだけの情報が共有されていれば、この無駄はなくせるはず。</p>
+        <p class="story__text">その実体験から生まれたのが、ステータス共有アプリ <strong>maai</strong> です。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution -->
+  <section class="section section--alt section--center">
+    <div class="section__inner">
+      <h2 class="section__title">maai でできること</h2>
+      <p class="section__subtitle">3つのシンプルなステータスで、チームの"いま"を可視化します。</p>
+      <div class="status-list">
+        <div class="status-item status-item--available">
+          <span class="status-badge status-badge--available">出勤</span>
+          <span class="status-desc">通常勤務中。連絡OK。</span>
+        </div>
+        <div class="status-item status-item--break">
+          <span class="status-badge status-badge--break">休憩中</span>
+          <span class="status-desc">休憩に入っています。急ぎでなければ後で。</span>
+        </div>
+        <div class="status-item status-item--holiday">
+          <span class="status-badge status-badge--holiday">休み</span>
+          <span class="status-desc">本日はお休みです。</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo -->
+  <section class="section section--center">
+    <div class="section__inner">
+      <h2 class="section__title">アプリイメージ</h2>
+      <p class="section__subtitle">実際の画面はこのようなイメージです。各メンバーの状態がカード形式で一覧表示されます。</p>
+      <div class="demo-wrapper">
+        <p class="demo-header">スタッフ一覧</p>
+        <div class="demo-grid">
+          <div class="demo-card demo-card--available">
+            <div class="demo-card__top">
+              <span class="demo-card__name">田中 太郎</span>
+              <span class="demo-card__badge demo-card__badge--available">出勤</span>
+            </div>
+            <p class="demo-card__time">最終更新: 06/05 09:00</p>
+          </div>
+          <div class="demo-card demo-card--break">
+            <div class="demo-card__top">
+              <span class="demo-card__name">鈴木 花子</span>
+              <span class="demo-card__badge demo-card__badge--break">休憩中</span>
+            </div>
+            <p class="demo-card__time">最終更新: 06/05 12:15</p>
+          </div>
+          <div class="demo-card demo-card--holiday">
+            <div class="demo-card__top">
+              <span class="demo-card__name">佐藤 健</span>
+              <span class="demo-card__badge demo-card__badge--holiday">休み</span>
+            </div>
+            <p class="demo-card__time">最終更新: 06/04 18:30</p>
+          </div>
+          <div class="demo-card demo-card--holiday">
+            <div class="demo-card__top">
+              <span class="demo-card__name">高橋 美咲</span>
+              <span class="demo-card__badge demo-card__badge--holiday">休み</span>
+            </div>
+            <p class="demo-card__time">最終更新: 06/04 19:00</p>
+          </div>
+          <div class="demo-card demo-card--available">
+            <div class="demo-card__top">
+              <span class="demo-card__name">伊藤 翔</span>
+              <span class="demo-card__badge demo-card__badge--available">出勤</span>
+            </div>
+            <p class="demo-card__time">最終更新: 06/05 08:45</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="section section--alt section--center">
+    <div class="section__inner">
+      <h2 class="section__title">活用シーン</h2>
+      <p class="section__subtitle">同じ店舗にいれば、誰が休憩中かは見ればわかる。<br>でも多店舗展開や拠点が分かれた瞬間、それが見えなくなります。</p>
+      <div class="usecase-list">
+        <div class="usecase-card">
+          <p class="usecase-card__title">飲食店</p>
+          <p class="usecase-card__desc">多店舗展開していると、他店舗のスタッフの状態が見えない。店長同士の電話で「今休憩中です」というやり取りが発生します。</p>
+        </div>
+        <div class="usecase-card">
+          <p class="usecase-card__title">物流</p>
+          <p class="usecase-card__desc">事務所から現場のドライバーや倉庫スタッフの状態が見えない。連絡のタイミングを判断するために、今の状態を可視化できると助かります。</p>
+        </div>
+        <div class="usecase-card">
+          <p class="usecase-card__title">美容室・サロン</p>
+          <p class="usecase-card__desc">店舗が複数あると、他店の店長やスタイリストの状態がわからない。店舗間の連絡で同じすれ違いが起きます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 maai. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
