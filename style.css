@@ -59,7 +59,7 @@ body {
 
 .section__subtitle {
   font-size: 1rem;
-  color: var(--color-text-sub);
+  color: var(--color-text);
   margin-bottom: 48px;
 }
 
@@ -86,7 +86,7 @@ body {
 
 .hero__sub {
   font-size: 1rem;
-  color: var(--color-text-sub);
+  color: var(--color-text);
   max-width: 520px;
   margin: 0 auto;
 }
@@ -99,7 +99,7 @@ body {
 
 .story__text {
   font-size: 1.05rem;
-  color: var(--color-text-sub);
+  color: var(--color-text);
   margin-bottom: 16px;
   line-height: 2;
   text-align: left;
@@ -144,7 +144,7 @@ body {
 
 .status-desc {
   font-size: 0.95rem;
-  color: var(--color-text-sub);
+  color: var(--color-text);
 }
 
 /* ===== Demo ===== */
@@ -240,9 +240,25 @@ body {
   margin-bottom: 8px;
 }
 
-.usecase-card__desc {
+.usecase-card__problem {
   font-size: 0.95rem;
-  color: var(--color-text-sub);
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+
+.usecase-card__problem::before {
+  content: "課題：";
+  font-weight: 700;
+}
+
+.usecase-card__solution {
+  font-size: 0.95rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.usecase-card__solution::before {
+  content: "→ ";
 }
 
 /* ===== Features ===== */
